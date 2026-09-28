@@ -1,0 +1,27 @@
+<VPNProfile>
+  <DnsSuffix>lhh.com.tr</DnsSuffix>
+  <DeviceTunnel>true</DeviceTunnel>
+  <RegisterDNS>true</RegisterDNS>
+  <NativeProfile>
+    <Servers>vpn.lhh.com.tr</Servers>
+    <RoutingPolicyType>SplitTunnel</RoutingPolicyType>
+    <NativeProtocolType>IKEv2</NativeProtocolType>
+    <DisableClassBasedDefaultRoute>true</DisableClassBasedDefaultRoute>
+    <Authentication>
+      <MachineMethod>Certificate</MachineMethod>
+    </Authentication>
+  </NativeProfile>
+  <Route>
+    <!-- Yalnızca Domain Controller ve IT Yönetim Alt Ağları -->
+    <Address>10.0.0.0</Address>
+    <PrefixSize>16</PrefixSize>
+  </Route>
+  <Route>
+    <Address>10.1.0.0</Address>
+    <PrefixSize>16</PrefixSize>
+  </Route>
+  <Route>
+    <Address>10.3.0.0</Address>
+    <PrefixSize>16</PrefixSize>
+  </Route>
+</VPNProfile>

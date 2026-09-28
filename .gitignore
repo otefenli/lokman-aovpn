@@ -1,0 +1,18 @@
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Windows temp
+*.tmp
+*.bak
+*.log
+
+# Sensitive certificates / keys
+*.pfx
+*.p12
+*.key
+*.pem
+*.cer
+*.crt
