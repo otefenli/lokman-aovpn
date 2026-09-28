@@ -33,9 +33,9 @@ flowchart TD
     GW --> RRAS
     RRAS --> NPS
     RRAS --> NAT
-    NAT -->|SNAT (10.3.2.36)| DC
-    NAT -->|SNAT (10.3.2.36)| APP
-    NAT -->|SNAT (10.3.2.36)| FILE
+    NAT -->|"SNAT (10.3.2.36)"| DC
+    NAT -->|"SNAT (10.3.2.36)"| APP
+    NAT -->|""SNAT (10.3.2.36)"| FILE
 ```
 
 ---
